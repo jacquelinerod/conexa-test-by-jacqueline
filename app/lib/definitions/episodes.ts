@@ -1,8 +1,6 @@
 interface IEpisodes {
-    all?: IEpisode[]
-    character1?: IEpisode[]
-    character2?: IEpisode[]
-    shared?: IEpisode[]
+    results: IEpisode[]
+    info: IEpisode[]
 }
 
 interface IEpisode {

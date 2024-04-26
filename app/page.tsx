@@ -12,7 +12,7 @@ export default function Page() {
     <main >
       <ProviderContextCharacter>
         <PickSection />
-        <EpisodesSection />
+        {/* <EpisodesSection /> */}
       </ProviderContextCharacter>
     </main>
   )

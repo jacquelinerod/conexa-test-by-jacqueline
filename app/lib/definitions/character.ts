@@ -41,3 +41,15 @@ export interface ICharacter {
     created: string
 }
 
+export interface IDataCharacter {
+    character1: ICharacterDefinition
+    character2: ICharacterDefinition
+}
+
+export interface ICharacterDefinition {
+    characterList: ICharacter[]
+    characterSelected: ICharacter | null
+    episodes: IEpisodes | null
+    prev: IInfo['prev']
+    next: IInfo['next']
+}

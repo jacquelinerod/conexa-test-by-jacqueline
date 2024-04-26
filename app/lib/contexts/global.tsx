@@ -1,13 +1,22 @@
 import { createContext, useContext, useState } from 'react'
-import { IContextCharacter, IDataCharacter } from '../definitions/context'
+import { IContextCharacter } from '../definitions/context'
+import { IDataCharacter } from '../definitions/character'
 
 const defaultValue: IDataCharacter = {
-    prev: '',
-    next: '',
-    characters: [],
-    character1: null,
-    character2: null,
-    episodies: null
+    character1: {
+        characterList: [],
+        characterSelected: null,
+        episodes: null,
+        prev: '',
+        next: ''
+    }, 
+    character2: {
+        characterList: [],
+        characterSelected: null,
+        episodes: null,
+        prev: '',
+        next: ''
+    }
 }
 
 const ContextCharacter = createContext<IContextCharacter>({ dataCharacter: defaultValue })
