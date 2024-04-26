@@ -1,19 +1,16 @@
-'use client'
+"use client";
 
-// Components 
-import PickSection from './ui/organisms/PickSection';
-import EpisodesSection from './ui/organisms/EpisodesSection';
-
-// Context
+import PickSection from "./ui/molecules/PickSection";
+import EpisodesSection from "./ui/organisms/EpisodesSection";
 import { ProviderContextCharacter } from "./lib/contexts/global";
 
 export default function Page() {
   return (
-    <main >
+    <main>
       <ProviderContextCharacter>
         <PickSection />
-        {/* <EpisodesSection /> */}
+        <EpisodesSection />
       </ProviderContextCharacter>
     </main>
-  )
+  );
 }
