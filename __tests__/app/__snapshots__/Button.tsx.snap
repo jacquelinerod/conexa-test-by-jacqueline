@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component should be disabled if the disabled property is true 1`] = `
+<div>
+  <button
+    class="myClass"
+    disabled=""
+  >
+    myText
+  </button>
+</div>
+`;
+
+exports[`Button Component should not be disabled if the disabled property is false 1`] = `
+<div>
+  <button
+    class="myClass"
+  >
+    myText
+  </button>
+</div>
+`;

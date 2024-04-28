@@ -24,13 +24,13 @@ export default function Pagination({
           disabled={!prev}
           onClick={() => onClick(prev)}
           className={getClassName(!prev)}
-          children="Prev"
+          text="Prev"
         />
         <Button
           disabled={!next}
           onClick={() => onClick(next)}
           className={getClassName(!next)}
-          children="Prev"
+          text="Prev"
         />
       </div>
     </section>

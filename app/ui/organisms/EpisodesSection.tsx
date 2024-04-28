@@ -1,4 +1,4 @@
-import { useContextCharacter } from "@/app/lib/contexts/global";
+import useContextCharacter from "@/app/lib/contexts/helperContext";
 import EpisodesList from "../atoms/EpisodesList";
 
 export default function EpisodesSection() {

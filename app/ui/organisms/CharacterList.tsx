@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useContextCharacter } from "../../lib/contexts/global";
+import useContextCharacter from "../../lib/contexts/helperContext";
 import { CHARACTER_STATUS, ICharacter } from "../../lib/definitions/character";
 import { useEffect, useState } from "react";
 import useFetchData from "../../lib/hooks/useFetchData";

@@ -6,7 +6,7 @@ interface IEpisodesList {
 }
 
 export default function EpisodesList({ title, episodeIds }: IEpisodesList) {
-  const url = episodeIds.length
+  const url = episodeIds?.length
     ? `https://rickandmortyapi.com/api/episode/${episodeIds}`
     : undefined;
 
@@ -21,9 +21,9 @@ export default function EpisodesList({ title, episodeIds }: IEpisodesList) {
   const { data, loading, error } = useFetchData(url);
 
   return loading ? (
-    "Loading"
+    <strong>Loading</strong>
   ) : error ? (
-    <strong>{error.message}</strong>
+    <strong>Ha ocurrido un error</strong>
   ) : (
     <section className="w-full max-h-[20vh] h-max-content overflow-y-auto custom-scrollbar gap-4 flex flex-col">
       <h2 className="text-center text-sm">{title}</h2>

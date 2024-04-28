@@ -1,21 +1,21 @@
 import { MouseEventHandler, ReactNode } from "react";
 
 interface IButton {
-  disabled?: boolean;
+  disabled: boolean;
   onClick: MouseEventHandler<HTMLButtonElement>;
-  className?: string;
-  children: string | ReactNode;
+  className: string;
+  text: string;
 }
 
 export default function Button({
   disabled,
   onClick,
   className,
-  children,
+  text,
 }: IButton) {
   return (
     <button disabled={disabled} onClick={onClick} className={className}>
-      {children}
+      {text}
     </button>
   );
 }
