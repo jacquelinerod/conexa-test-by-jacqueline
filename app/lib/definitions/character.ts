@@ -53,3 +53,12 @@ export interface ICharacterDefinition {
   prev: IInfo["prev"];
   next: IInfo["next"];
 }
+
+export interface ICharacterItem {
+  id: keyof IDataCharacter;
+  character: ICharacter;
+}
+
+export interface ISelectedCharacters {
+  id: keyof IDataCharacter;
+}

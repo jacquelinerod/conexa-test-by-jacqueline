@@ -1,17 +1,10 @@
-import { MouseEventHandler, ReactNode } from "react";
-
-interface IButton {
-  disabled: boolean;
-  onClick: MouseEventHandler<HTMLButtonElement>;
-  className: string;
-  text: string;
-}
+import { IButton } from "@/app/lib/definitions/common";
 
 export default function Button({
   disabled,
-  onClick,
   className,
   text,
+  onClick,
 }: IButton) {
   return (
     <button disabled={disabled} onClick={onClick} className={className}>

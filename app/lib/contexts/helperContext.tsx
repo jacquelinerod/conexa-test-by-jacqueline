@@ -24,8 +24,6 @@ export const ContextCharacter = createContext<IContextCharacter>({
 });
 
 export default function useContextCharacter() {
-  console.log("falopa");
-
   const context = useContext(ContextCharacter);
   if (!context) {
     throw new Error(

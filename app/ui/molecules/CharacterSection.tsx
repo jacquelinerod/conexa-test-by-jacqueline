@@ -1,8 +1,8 @@
 import CharacterList from "../organisms/CharacterList";
 
-export default function PickSection() {
+export default function CharacterSection() {
   return (
-    <section className="grid grid-cols-2  gap-2 px-2 py-2">
+    <section className="pick-section-container grid grid-cols-2  gap-7 py-2 pt-0 pb-2 relative px-4">
       <section className="w-full">
         <CharacterList id="character1" />
       </section>

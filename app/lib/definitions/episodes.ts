@@ -1,9 +1,9 @@
-interface IEpisodes {
-  results: IEpisode[];
-  info: IEpisode[];
+export interface IEpisodeContainer {
+  title: string;
+  episodeIds?: string | null;
 }
 
-interface IEpisode {
+export interface IEpisode {
   episode: string;
   name: string;
   air_date: string;
